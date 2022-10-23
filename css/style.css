@@ -1,0 +1,164 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+/**********************
+/* UTILITY CLASSES
+/**********************/
+.buttonFontSize{
+  
+}
+
+
+
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* The navigation element  */
+nav{
+  width: 100%;
+  background-color: #fff;
+}
+.navContainer{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 30px;
+}
+.navCenter{
+  flex-basis: 70%;
+}
+.navCenter ul{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+header {
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/aeaeaeaeaeae.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+
+}
+.boxA{
+  display: flex;
+  justify-content: space-around;
+  margin:4em 0 4em 0em ;
+  color: #fff;
+}
+.openHours{
+  transform: rotate(90deg);
+  margin-left: 10em;
+}
+.boxB{
+  display: flex;
+  justify-content: space-between;
+  margin:4em 0 4em 9em ;
+  color: #fff;
+}
+.card{
+  background-color: #000;
+  padding: 2em 3em;
+  line-height: 30px;
+}
+.offer{
+  font-size: 2.5em;
+}
+.switchBgImage{
+margin:13em 5em 0 0;
+}
+/* The services section */
+.boxC{
+  display: flex;
+  justify-content: space-around;
+  margin: 10em 0;
+  padding: 2em 5em;
+}
+.column{
+  text-align: center;
+  padding: 2em 5em;
+}
+.boxD{
+  display: flex;
+  padding: 5em 10em;
+  background-color: #F3F4F6;
+}
+.boxD div{
+  padding: 2em 3em 0 0;
+line-height: 30px;
+}
+.boxF{
+
+
+
+  
+}
+.boxF h2{
+text-align: center;
+}
+.stylistsWrapper{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+h1{
+  font-size: 5em;
+  margin-bottom: 10px;
+}
+h2{
+font-size: 3em;
+line-height: 1em;
+
+}
+h3{
+  font-size: 2em;
+}
