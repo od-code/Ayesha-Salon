@@ -5,160 +5,282 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
+/* 
 body {
-
-}
-/**********************
-/* UTILITY CLASSES
-/**********************/
-.buttonFontSize{
-  
-}
-
-
-
-
-
-
+} */
 /******************************************
 /* LAYOUT
 /*******************************************/
 /* The navigation element  */
-nav{
+nav {
   width: 100%;
   background-color: #fff;
 }
-.navContainer{
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 0 30px;
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
 }
-.navCenter{
+.navCenter {
   flex-basis: 70%;
 }
-.navCenter ul{
+.navCenter ul {
   display: flex;
   justify-content: space-evenly;
-
+}
+.navCenter a {
+  color: rgb(100, 89, 89);
 }
 header {
-  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/aeaeaeaeaeae.jpg") no-repeat center;
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/aeaeaeaeaeae.jpg")
+    no-repeat center;
   background-size: cover;
   height: 100vh;
-
 }
-.boxA{
+.boxA {
   display: flex;
   justify-content: space-around;
-  margin:4em 0 4em 0em ;
+  margin: 4em 0 4em 0em;
   color: #fff;
 }
-.openHours{
+.openHours {
   transform: rotate(90deg);
   margin-left: 10em;
 }
-.boxB{
+.boxB {
   display: flex;
   justify-content: space-between;
-  margin:4em 0 4em 9em ;
+  margin: 4em 0 4em 9em;
   color: #fff;
 }
-.card{
+.card {
   background-color: #000;
   padding: 2em 3em;
   line-height: 30px;
 }
-.offer{
-  font-size: 2.5em;
+.offer {
+  font-size: 40px;
+  font-weight: bolder;
 }
-.switchBgImage{
-margin:13em 5em 0 0;
+.switchBgImage {
+  margin: 13em 5em 0 0;
 }
 /* The services section */
-.boxC{
+.boxC {
   display: flex;
   justify-content: space-around;
   margin: 10em 0;
   padding: 2em 5em;
 }
-.column{
+.column {
   text-align: center;
   padding: 2em 5em;
 }
-.boxD{
-  display: flex;
-  padding: 5em 10em;
-  background-color: #F3F4F6;
-}
-.boxD div{
-  padding: 2em 3em 0 0;
-line-height: 30px;
-}
-.boxF{
-
-
-
-  
-}
-.boxF h2{
-text-align: center;
-}
-.stylistsWrapper{
+.boxD {
   display: flex;
   justify-content: space-around;
+  padding: 5em 10em;
+  background-color: #f3f4f6;
+}
+.boxD div {
+  margin: 10px 20px 0 0;
+  line-height: 30px;
+  text-align: start;
+}
+.boxD {
+  text-align: start;
 }
 
+.stylistsWrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 100px;
+}
+/* The boxes with the stylists' names  */
 
-
-
-
-
-
-
-
-
-
-
-
-footer {
-
+.stylistTag {
+  background: #000;
+  color: #fff;
+  width: 80%;
+  z-index: 6;
+  text-align: center;
+  margin: auto;
+  padding: 10px 0;
+  position: relative;
+  top: -40px;
+}
+/* To align the icon and the text inside the buttons  */
+.styleTag span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxG {
+  background: url("https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Promo-Banner-Image.jpg?id=4553")
+    no-repeat center;
+  background-size: cover;
+  height: 60vh;
+  margin: 2em 8em;
+  padding: 100px 0 0 120px;
+}
+/* The hoto grid at the end of the page  */
+.boxH {
+  padding: 0 100px;
+}
+.imgContainer {
+  margin: 0 auto;
+  text-align: center;
+}
+.footerColumn {
+  float: left;
+  width: 33%;
+}
+.imgContainer img {
+  margin: 5px;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-li{
+li {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
 }
-h1{
+h1 {
   font-size: 5em;
   margin-bottom: 10px;
 }
-h2{
-font-size: 3em;
-line-height: 1em;
 
+.mdText {
+  text-align: center;
+  padding: 50px;
 }
-h3{
+h2 {
+  font-size: 3em;
+  line-height: 1em;
+}
+h3 {
+  font-size: 1.5em;
+}
+.lgFont {
   font-size: 2em;
+}
+.btn {
+  background: #000;
+  padding: 8px 10px;
+}
+.btn a {
+  color: #fff;
+}
+.btnCard {
+  background: #fff;
+  padding: 8px 10px;
+}
+.btnCard a {
+  color: #000;
+}
+
+/**************************************
+/* MOBILE LAYOUT */
+/**************************************/
+@media screen and (max-width: 480px) {
+  /* The nav section  */
+  .navCenter,
+  .nav-end,
+  .openHours,
+  .switchBgImage {
+    display: none;
+  }
+  .navContainer > img {
+    margin: 0 auto;
+  }
+  .boxA,
+  .boxB {
+    width: 100%;
+  }
+  .boxA > div {
+    width: 100%;
+    text-align: center;
+    padding: 0 30px;
+  }
+  .boxB {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    text-align: center;
+  }
+  .boxC {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .column {
+    padding: 0 20px;
+  }
+  .boxD {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .boxD div {
+    margin: 20px 0;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .stylistsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+  .boxG {
+    background: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  .couponWrap {
+    text-align: center;
+    padding: 0 20px;
+    margin: 40px 0;
+  }
+  .couponWrap > span {
+    font-size: 30px;
+    font-weight: bolder;
+    display: block;
+    text-decoration: underline;
+  }
+  .boxH {
+    padding: 0;
+  }
+  .footerColumn {
+    float: left;
+    width: 100%;
+  }
+
+  /* utility classes */
+  h1 {
+    font-size: 2.5em;
+  }
 }
